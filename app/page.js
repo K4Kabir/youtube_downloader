@@ -59,7 +59,7 @@ export default function Home() {
           Please wait...
         </h1>
       ) : (
-        <div className="grid grid-cols-2 gap-4 py-4">
+        <div className="grid grid-cols-1 gap-4 py-4 md:grid-cols-2">
           {data.map((el, index) => {
             return <DownloadCard key={index} data={el} />;
           })}
